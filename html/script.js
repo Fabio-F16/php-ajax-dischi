@@ -13,7 +13,7 @@ const app = new Vue({
     //('"http://localhost/php-ajax-dischi/html/discs.php"')
     // "./discs.php"
     mounted() {
-        axios.get("./discs.php").then((response) => {
+        axios.get("http://localhost/php-ajax-dischi/html/discs.php").then((response) => {
 
             console.log(response);
             this.dischi = response.data;

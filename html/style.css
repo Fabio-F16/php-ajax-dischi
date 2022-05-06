@@ -1,0 +1,36 @@
+header {
+    height: 70px;
+    background-color: #2e3a46;
+    padding: 10px;
+}
+
+header img {
+    width: 50px;
+}
+
+main {
+    background-color: #1e2d3b;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    padding-top: 50px
+}
+
+.ff-card {
+    background-color: #2e3a46;
+    margin: 15px 5px;
+    padding: 20px 0px;
+    min-height: 250px;
+}
+
+.ff-card h5 {
+    color: white;
+}
+
+.ff-card p {
+    color: grey;
+    margin-bottom: 0.2rem;
+}
+
+.ff-card img {
+    width: 80%;
+}
