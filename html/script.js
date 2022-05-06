@@ -5,18 +5,19 @@ const app = new Vue({
     el: '#app',
     data() {
         return {
-            discs: [],
+            dischi: [],
             test: 'ciao'
         }
 
     },
-    //('"http://localhost/php-ajax-dischi/php/data.php"')
+    //('"http://localhost/php-ajax-dischi/html/discs.php"')
+    // "./discs.php"
     mounted() {
         axios.get("./discs.php").then((response) => {
 
             console.log(response);
-            this.discs = response.data;
-            console.log(this.discs);
+            this.dischi = response.data;
+            console.log(this.dischi);
 
         }).catch(error => console.log(error));
     }
